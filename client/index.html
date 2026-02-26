@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/svg+xml" href="/icon.svg">
+
+    <title>Bliscord</title>
+</head>
+<body>
+    <div class="app">
+        <div class="profile-user profile-theme-1">
+            <div class="user-banner user-banner-1">
+                <div class="profile-user-profile profile-1">
+                    <span class="profile-user-badge">👑</span>
+                </div>
+                <div class="profile-user-banner-badge-holder">
+                    <span class="profile-user-banner-badge user-banner-badge-1">👑</span>
+                    <span class="profile-user-banner-badge user-banner-badge-2">🎭</span>
+                    <span class="profile-user-banner-badge user-banner-badge-3">🪻</span>
+                </div>
+            </div>
+            <div class="profile-user-details">
+                <div class="profile-identity-holder">
+                    <div class="profile-identity">
+                        <p class="profile-user-username">Giddu</p>
+                        <p class="profile-user-userid">#1</p>
+                    </div>
+                    <div class="profile-controls">
+                        <!--                        
+                        <button class="profile-block">
+                            <img src="icons/block.svg" alt="Block" title="Block"></img>
+                        </button>
+                        <button class="profile-dm">
+                            <img src="icons/dm.svg" alt="DM" title="DM"></img>
+                        </button>
+                        -->
+                    </div>
+                </div>
+                <p class="profile-user-heading">Bio</p>
+                <p class="profile-user-bio">
+                    Giddu is a curious, fluffy explorer who rules the house with quiet confidence, 
+                    demanding snacks, naps, and admiration from every human nearby. daily!!
+                </p>
+                <p class="profile-user-heading">Links</p>
+                <div class="profile-user-links"></div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header-holder">
+                <h1>BLISCORD</h1>
+                <span class="header-span">.mobile</span>
+                <h1>✦</h1>
+            </div>
+            <div class="header-holder-right">
+                <div class="header-right-holder">
+                    <div class="header-user-details">
+                        <p class="username-display">Hi</p>
+                        <div class="profile-display">
+                            <div class="header-profile">
+                                <span class="header-profile-badge"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--                
+                <p class="gipoints-display">
+                    145 GP
+                    <img src="icons/lighting.svg"> 
+                </p>
+                -->
+                <div class="notifications">
+                    <img alt="notifications" src="icons/notificationsread.svg">
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                <div class="home">
+                    <button class="homes-button">
+                        <img src="icons/home.svg" alt="Create Server" class="home-img1">
+                        <img src="icons/home2.svg" alt="Create Server" class="home-img2">
+                    </button>
+                </div>
+                <div class="horizontal-seperator"></div>
+                <div class="servers-wrapper">
+                    <div class="servers">
+                    </div>
+                    <div class="create-wrapper">
+                        <div class="create">
+                            <img src="icons/add.svg" alt="Create Server" class="create-img1">
+                            <img src="icons/add2.svg" alt="Create Server" class="create-img2">
+                        </div>
+                    </div>
+                    <div class="discover-wrapper">
+                        <div class="discover">
+                            <img src="icons/discover.svg" alt="Discover servers" class="discover-img1">
+                            <img src="icons/discover2.svg" alt="Discover servers" class="discover-img2">
+                        </div>
+                    </div>
+                </div>
+                <div class="user-settings-wrapper">
+                    <div class="user-settings">
+                        <img src="icons/settings.svg" alt="Settings" class="settings-img1">
+                        <img src="icons/settings2.svg" alt="Settings" class="settings-img2">
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="main-content-top">
+                    <h2 class="server-name">Select a Server</h2>
+                    <h2 class="header-channel">welcome</h2>
+                    <button class="header-server-settings hidden">⚙️</button>
+                </div>
+                <div class="main-content-bottom">
+                    <div class="main-content-bottom-left">
+
+                    </div>
+                    <div class="main-content-middle">
+                        <div class="messages">
+                            <div class="messages-wrapper"> 
+                                <!--                                
+                                    <div class="welcome">
+                                        <img src="icon.svg" alt="App icon" class="app-icon">
+                                        <h2>hi welcome to bliscord 👋</h2>
+                                        <p class="mid-text">select a server from the sidebar to get started</p>
+                                        <p>or sit at this screen idk</p>
+                                    </div>                 
+                                -->
+                                <div class="server-welcome">
+                                    <div class="hero-block">
+                                        <span class="block-hero-badge">🌈</span>
+                                    </div>
+                                    <h1 class="block-heading">welcome to giddu hangout! 👑</h1>
+                                    <p class="block-paragraph">a server for all the giddus to discuss the plans for world domination</p>
+                                    <div class="block-announcement">
+                                        <div class="marquee-track">
+                                            <span>🎉 server just launched, invite your friends!</span>
+                                            <span>🎉 server just launched, invite your friends!</span>
+                                            <span>🎉 server just launched, invite your friends!</span>
+                                            <span>🎉 server just launched, invite your friends!</span>
+                                        </div> 
+                                    </div>
+                                    <div class="block-about">
+                                        <h2 class="about-heading">about us</h2>
+                                        <div class="owner-block">
+                                            <h3 class="about-user-heading">the owner:</h3>
+                                            <div class="owner-details">
+                                                <div class="owner-profile profile-1">
+                                                    <span class="owner-badge">👑</span>
+                                                </div>
+                                                <p class="owner-name">Giddu</p>
+                                            </div>
+                                        </div>
+                                        <h3 class="about-user-heading">administrators:</h3>
+                                            <div class="user-block">
+                                            <div class="user-details">
+                                                <div class="user-profile profile-1">
+                                                    <span class="user-badge">👑</span>
+                                                </div>
+                                                <p class="user-name">giddus sister</p>
+                                            </div>
+                                        </div>
+                                        <h3 class="about-user-heading">notable mentions:</h3>
+                                        <div class="user-block">
+                                            <div class="user-details">
+                                                <div class="user-profile profile-1">
+                                                    <span class="user-badge">👑</span>
+                                                </div>
+                                                <p class="user-name">giddus brother</p>
+                                            </div>
+                                        </div>
+                                        <div class="user-block">
+                                            <div class="user-details">
+                                                <div class="user-profile profile-1">
+                                                    <span class="user-badge">👑</span>
+                                                </div>
+                                                <p class="user-name">giddus brother</p>
+                                            </div>
+                                        </div>
+                                        <div class="user-block">
+                                            <div class="user-details">
+                                                <div class="user-profile profile-1">
+                                                    <span class="user-badge">👑</span>
+                                                </div>
+                                                <p class="user-name">giddus brother</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block-rules">
+                                        <h2 class="rule-heading">rules</h2>
+                                        <ul class="rules">
+                                            <li class="block-rule">be cool</li>
+                                            <li class="block-rule">feed giddu</li>
+                                            <li class="block-rule">sacrifise</li>
+                                        </ul>
+                                    </div>
+                                    <div class="starting-channel">
+                                        <h2 class="get-started-heading">start chatting</h2>
+                                        <button class="get-started-channel">
+                                            <img src="icons/leave.svg" alt="proceed">
+                                            General
+                                        </button>
+                                        <p>orrr select a channel from the channel list</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mentions-holder">
+                            <div class="mentions">
+                                <p class="mention-heading">MENTION</p>
+                                <div class="mention">
+                                    <div class="mention-profile-picture profile-1">
+                                        <span class="mention-badge">👑</span>
+                                    </div>
+                                    <p class="mention-username">giddu</p>
+                                </div>
+                                <div class="mention">
+                                    <div class="mention-profile-picture profile-1">
+                                        <span class="mention-badge">👑</span>
+                                    </div>
+                                    <p class="mention-username">giddu</p>
+                                </div>
+                                <div class="mention">
+                                    <div class="mention-profile-picture profile-1">
+                                        <span class="mention-badge">👑</span>
+                                    </div>
+                                    <p class="mention-username">giddu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="typing-holder">
+                            <div class="typing-holder-holder">
+                                <p class="mention-heading">TYPING</p>
+                                <div class="typing-holder-bottom">
+                                    <div class="typing-list">
+                                        <div class="typing">
+                                            <div class="typing-profile profile-1">
+                                                <span class="typing-profile-badge">👑</span>
+                                            </div>
+                                        </div>
+                                        <div class="typing">
+                                            <div class="typing-profile profile-1">
+                                                <span class="typing-profile-badge">👑</span>
+                                            </div>
+                                        </div>
+                                        <div class="typing">
+                                            <div class="typing-profile profile-1">
+                                                <span class="typing-profile-badge">👑</span>
+                                            </div>
+                                        </div>
+                                        <div class="typing">
+                                            <div class="typing-profile profile-1">
+                                                <span class="typing-profile-badge">👑</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="typing-indicator-holder">
+                                        <p class="typing-maxed">+ 1 other</p>
+                                        <p class="typing-indicator">are typing...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="typing-box">
+                            <div class="input-holder">
+                                <button class="upload-file">
+                                    <img src="icons/upload2.svg" alt="Upload File" class="upload-img1">
+                                    <img src="icons/upload.svg" alt="Upload File" class="upload-img2">
+                                </button>
+                                <input type="text" class="main-input" placeholder="type a very questionable message">
+                                <button class="send">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-sidebar">
+                <div class="members"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>v0.1: beta. “don’t feed the pigeons, they’re plotting”</p>
+        </div>
+    </div>
+    <div class="notif-panel">
+        <h2>Notifications</h2>
+        <div class="notif-list"></div>
+    </div>
+
+    <!-- Popup stuff --> 
+    <div class="transparent">
+        <div class="server-settings-wrapper">
+            <div class="server-settings">
+                <button class="back">
+                    <img src="icons/close.svg" placeholder="close">
+                </button>
+                <div class="server-settings-header">
+                    <h1>Server Settings</h1>
+                </div>
+                <div class="server-settings-bottom">
+                    <div class="server-settings-categories">
+                        <button class="server-details">Details</button>
+                        <button class="server-appearence">Appearence</button>
+                        <button class="server-settings-channel">Channels</button>
+                        <button class="server-roles">Roles</button>
+                        <button class="server-welcome">Welcome</button>
+                        <button class="server-deletion">Deletion</button>
+                    </div>
+
+                    <div class="server-settings-content">
+                        <h2>select a server icon</h2>
+                        <div class="server-icons">
+                            <div class="server-icon icon-1">
+                                <img src="icons/icon-1.svg"> 
+                            </div>
+                            <div class="server-icon icon-2">
+                                <img src="icons/icon-2.svg"> 
+                            </div>
+                            <div class="server-icon icon-3">
+                                <img src="icons/icon-3.svg"> 
+                            </div>
+                        </div>
+                        <h2>select a server banner</h2>
+                        <div class="server-banners">
+                            <div class="server-banner banner-1">
+                                <img src="icons/banner-1.svg">
+                            </div>
+                            <div class="server-banner banner-2">
+                                <img src="icons/banner-2.svg">
+                            </div>
+                            <div class="server-banner banner-3">
+                                <img src="icons/banner-3.svg">
+                            </div>
+                        </div>
+                        <h2>server name</h2>
+                        <input placeholder="server name" type="text"> 
+                        <h2>server </h2>
+                        <input placeholder="server name" type="text"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="password-input-modal hidden">
+            <button class="close-password-input-modal">
+                <img src="icons/close.svg" alt="Close">
+            </button>
+            <div>
+                <h1>Hold on...</h1>
+                <p>Enter your password to proceed</p>
+            </div>
+            <input class="password-confirmation-input" placeholder="enter password" type="password">
+            <button class="password-confirmation-button">
+                <img alt="proceed" src="icons/leave.svg">
+                Proceed
+            </button>
+        </div>
+        <div class="edit-profile-modal hidden">
+            <button class="close-edit-profile">
+                <img src="icons/close.svg" alt="close">
+            </button>
+            <div class="edit-profile-top">
+                <h1>Appearance</h1>
+                <h1>Details</h1>
+            </div>
+            <div class="sections">
+                <div class="section-1">
+                    <h3>profile picture</h3>
+                    <div class="edit-profile-pictures">
+                        <button class="profile-1"></button>
+                        <button class="profile-2"></button>
+                        <button class="profile-3"></button>
+                        <button class="profile-4"></button>
+                        <button class="profile-5"></button>
+                        <button class="profile-6"></button>
+                        <button class="profile-7"></button>
+                        <button class="profile-8"></button>
+                        <button class="profile-9"></button>
+                    </div>
+                    <h3>profile badge</h3>
+                    <div class="edit-profile-badges">
+                        <button class="profile-badge-1">🎀</button>
+                        <button class="profile-badge-2">🔪</button>
+                        <button class="profile-badge-3">👑</button>
+                        <button class="profile-badge-4">☁️</button>
+                        <button class="profile-badge-5">🐈</button>
+                    </div>
+                    <h3>profile theme</h3>
+                    <div class="profile-theme-holder">
+                        <button class="profile-theme profile-theme-1"></button>
+                        <button class="profile-theme profile-theme-2"></button>
+                        <button class="profile-theme profile-theme-3"></button>
+                        <button class="profile-theme profile-theme-4"></button>
+                        <button class="profile-theme profile-theme-5"></button>
+                        <button class="profile-theme profile-theme-6"></button>
+                        <button class="profile-theme profile-theme-7"></button>
+                        <button class="profile-theme profile-theme-8"></button>
+                    </div>
+                </div>
+                <div class="section-2">
+                    <h3>banner colour</h3>
+                    <div class="banner-color">
+                        <button class="user-banner-1"></button>
+                        <button class="user-banner-2"></button>
+                        <button class="user-banner-3"></button>
+                        <button class="user-banner-4"></button>
+                        <button class="user-banner-5"></button>
+                        <button class="user-banner-6"></button>
+                        <button class="user-banner-7"></button>
+                        <button class="user-banner-8"></button>
+                        <button class="user-banner-9"></button>
+                        <button class="user-banner-10"></button>
+                        <button class="user-banner-11"></button>
+                        <button class="user-banner-12"></button>
+                        <button class="user-banner-13"></button>
+                        <button class="user-banner-14"></button>
+                        <button class="user-banner-15"></button>
+                        <button class="user-banner-16"></button>
+                    </div>
+                    <h3>banner badge</h3>
+                    <div class="banner-badge-holder badge-holder-1">
+                        <p>Badge 1:</p>
+                        <button class="banner-badge banner-badge-1">🎀</button>
+                        <button class="banner-badge banner-badge-2">🏆</button>
+                        <button class="banner-badge banner-badge-3">🥇</button>
+                        <button class="banner-badge banner-badge-4">🍕</button>
+                        <button class="banner-badge banner-badge-5">🎖️</button>
+                    </div>
+
+                    <div class="banner-badge-holder badge-holder-2">
+                        <p>Badge 2:</p>
+                        <button class="banner-badge banner-badge-6">⚡</button>
+                        <button class="banner-badge banner-badge-7">🏈</button>
+                        <button class="banner-badge banner-badge-8">⚽</button>
+                        <button class="banner-badge banner-badge-9">🎾</button>
+                        <button class="banner-badge banner-badge-10">👽</button>
+                    </div>
+
+                    <div class="banner-badge-holder badge-holder-3">
+                        <p>Badge 3:</p>
+                        <button class="banner-badge banner-badge-11">🐰</button>
+                        <button class="banner-badge banner-badge-12">🐈</button>
+                        <button class="banner-badge banner-badge-13">🐼</button>
+                        <button class="banner-badge banner-badge-14">🦊</button>
+                        <button class="banner-badge banner-badge-15">🦖</button>
+                    </div>
+                    <h3>about me tags</h3>
+                    <div class="tag-selector">
+                        <button class="tag">🎨 Creative</button>
+                        <button class="tag">💻 Coder</button>
+                        <button class="tag">🎮 Gamer</button>
+                        <button class="tag">🫣 Intovert</button>
+                        <button class="tag">🍕 Foodie</button>
+                        <button class="tag">🚀 Ambitious</button>
+                        <button class="tag">🎭 Dramatic</button>
+                        <button class="tag">🐈 Cats</button>
+                        <button class="tag">🐕 Dogs</button>
+                    </div>
+                    <div class="selected-tags">
+                        <!-- Max 5 tags -->
+                    </div>
+                </div>
+                <div class="section-3">
+                    <div class="username-section">
+                        <h3>username</h3>
+                        <div>
+                            <input type="text" placeholder="new username" class="username-update">
+                            <button class="set-username">Set</button>
+                        </div>
+                    </div>
+                    <div class="password-section">
+                        <h3>password</h3>
+                        <div class="password-section-holder">
+                            <input type="password" placeholder="old password" class="password-old">
+                            <input type="password" placeholder="new password" class="password-new">
+                        </div>
+                        <button class="set-password">Set</button>
+                    </div>
+                    <div>
+                        <h3>links</h3>
+                        <div class="list-link">
+                            <p class="profile-link">www.example.com/asjdks/dasdj <button><img src="icons/close.svg" alt="delete"></button></p>
+                            <p class="profile-link">www.youtube.com/asjdouasghdasd <button><img src="icons/close.svg" alt="delete"></button></p>
+                        </div>
+                        <div>
+                            <input type="url" placeholder="enter link" class="link-adder">
+                            <button class="add-link">Add</button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>bio</h3>
+                        <textarea type="text" placeholder="enter bio" class="bio-updater"></textarea>
+                        <p class="bio-updater-limit">0/150</p>
+                        <button class="save-bio">Save</button>
+                    </div>
+                </div>
+            </div>
+            <button class="save-changes">Save Changes</button>
+            <p class="changes-indicator saved">All changes saved.</p>
+            <div class="edit-profile-preview profile-theme-1">
+                <div class="preview-user-banner user-banner-2">
+                    <div class="preview-user-profile profile-1">
+                        <span class="preview-user-badge">👑</span>
+                    </div>
+                    <div class="preview-user-banner-badge-holder">
+                        <span class="preview-user-banner-badge user-banner-badge-1">👑</span>
+                        <span class="preview-user-banner-badge user-banner-badge-2">🎭</span>
+                        <span class="preview-user-banner-badge user-banner-badge-3">🪻</span>
+                    </div>
+                </div>
+                <div class="preview-user-details">
+                    <p class="preview-user-username">Giddu</p>
+                    <p class="preview-user-userid">#1</p>
+                    <p class="preview-user-heading">Bio</p> 
+                    <p class="preview-user-bio">
+                        Giddu is a curious, fluffy explorer who rules the house with quiet confidence, 
+                        demanding snacks, naps, and admiration from every human nearby. daily!!
+                    </p>
+                    <p class="preview-user-heading">Links</p>
+                    <div class="preview-user-links"></div>
+                </div>
+            </div>
+        </div>
+        <div class="settings-modal-wrapper hidden">
+            <div class="settings-modal hidden">
+                <button class="settings-close">
+                    <img src="icons/close.svg" alt="close">
+                </button> 
+                <div class="profile-section">
+                    <div class="sub-profile-section">
+                        <div class="settings-profile profile-1">
+                            <span class="settings-badge">👑</span>
+                        </div>
+                        <p class="settings-greeting">Hi, [USERNAME]</p>
+                        <button class="edit-profile">
+                            <img src="icons/edit2.svg" alt="Edit">
+                        </button>
+                    </div>
+                    <div class="stats">
+                        <h2>Stats</h2>
+                        <div class="stat">
+                            <img src="icons/servers.svg" alt="Servers"> 
+                            <div>
+                                <p class="servers-stat">10 servers joined</p>
+                                <span class="servers-stat-mocker stat-mocker">that's alot</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <img src="icons/chat.svg" alt="Servers"> 
+                            <div>
+                                <p class="messages-stat">23 messages sent</p>
+                                <span class="messages-stat-mocker stat-mocker">quiet boy eh?</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <img src="icons/emojis.svg" alt="Servers"> 
+                            <div>
+                                <p class="reactions-stat">321938 reactions sent</p>
+                                <span class="reactions-stat-mocker stat-mocker">god what is wrong with you</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <img src="icons/friends.svg" alt="Servers"> 
+                            <div>
+                                <p class="friends-stat">14 friends added</p>
+                                <span class="friends-stat-mocker stat-mocker">not very social huh</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <img src="icons/hours.svg" alt="Servers"> 
+                            <div>
+                                <p class="online-stat">12387 minutes online</p>
+                                <span class="online-stat-mocker stat-mocker">time spent outside: -1 hour</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <img src="icons/average.svg" alt="Servers"> 
+                            <div>
+                                <p class="average-stat">12m average session</p>
+                                <span class="average-stat-mocker stat-mocker">thats like, 720 seconds</span>
+                            </div>
+                        </div>
+                        <!-- TODO: ADD ADVANCED STATS -->
+                    </div>
+                </div>
+                <div class="account-controls">
+                    <button class="log-out">Log Out</button>
+                    <button class="delete-account">Delete Account</button>
+                </div>
+            </div>
+        </div>
+        <div class="deletion-modal-wrapper hidden">
+            <div class="deletion-modal hidden">
+                <button class="deletion-modal-close">
+                    <img src="icons/close.svg" alt="close">
+                </button>
+                <h2>Are you sure, [USERNAME]?</h2>
+                <h3>The following servers:</h3>
+                <div class="server-list">
+
+                </div>
+                <h3>will be affected.</h3>
+                <button class="delete-account-final">
+                    Delete Account
+                </button>
+                <p class="warning">
+                    This will replace your profile everywhere with a ‘Deleted Account’ placeholder. 
+                    Content will remain, but your identity will be anonymized.
+                </p>
+            </div>
+        </div>
+        <div class="discover-modal-wrapper hidden">
+            <div class="discover-modal hidden">
+                <button class="discover-modal-close">
+                    <img src="icons/close.svg" alt="close">
+                </button>
+                <div class="discover-modal-holder">
+                    <input class="discover-modal-input" placeholder="search for a server or enter an invite code"> <!--  INVITE CODE FUNCTIONALITY PLEASEEEEEE  -->
+                    <button class="discover-button"><img src="icons/discover2.svg" alt="Discover"></button>
+                </div>
+                <div class="vertical-seperator"></div>
+                <div class="discover-modal-servers"></div>
+            </div>
+        </div>
+        <div class="entry-modal-wrapper hidden">
+            <div class="entry-modal hidden">
+                <h2>BLISCORD™</h2>
+                <h3>the worlds best chatting platform</h3>
+                <p>atleast i like to think that</p>
+                <p class="p2">(absolute delusion)</p>
+                <div class="buttons-holder">
+                    <button class="empty-login">log in</button>
+                    <button class="empty-signup">sign up</button>
+                </div>
+            </div>
+        </div>
+        <div class="login-modal-wrapper hidden">
+            <div class="login-modal hidden">
+                <h2>log in</h2>
+                <button class="back">
+                    <img src="icons/back.svg" alt="back">
+                </button>
+                <input type="text" placeholder="username" class="username-input">
+                <input type="password" placeholder="password" class="password-input">
+                <button class="log-in">log in</button>
+                <p class="pookie-disclaimer">
+                    * Please don't use your bank password, fr fr. <br>
+                    <span>(I'm forced legally to tell you this; if I weren't, I would encourge you to use it)</span>
+                </p>
+            </div>
+        </div>
+        <div class="signup-modal-wrapper hidden">
+            <div class="signup-modal hidden">
+                <h2>sign up</h2>
+                <button class="back">
+                    <img src="icons/back.svg" alt="back">
+                </button>
+                <input type="text" placeholder="username" class="username-input">
+                <input type="password" placeholder="password" class="password-input">
+                <button class="continue">continue</button>
+                <p class="pookie-disclaimer">
+                    * Please don't use your bank password, fr fr. <br>
+                    <span>(I'm forced legally to tell you this; if I weren't, I would encourge you to use it)</span>
+                </p>
+            </div>
+        </div>
+        <div class="profile-modal-wrapper hidden">
+            <div class="profile-modal hidden">
+                <h2>select a profile picture</h2>
+                <div class="profile-pictures">
+                    <button class="profile-1"></button>
+                    <button class="profile-2"></button>
+                    <button class="profile-3"></button>
+                    <button class="profile-4"></button>
+                    <button class="profile-5"></button>
+                    <button class="profile-6"></button>
+                    <button class="profile-7"></button>
+                    <button class="profile-8"></button>
+                    <button class="profile-9"></button>
+                </div>
+                <h2>select a profile badge</h2>
+                <div class="profile-badges">
+                    <button class="profile-badge-1">🎀</button>
+                    <button class="profile-badge-2">🔪</button>
+                    <button class="profile-badge-3">👑</button>
+                    <button class="profile-badge-4">☁️</button>
+                    <button class="profile-badge-5">🐈</button>
+                </div>
+                <div class="profile-preview-modal-wrapper">
+                    <div class="profile-preview-modal">
+                        <h2>preview</h2>
+                        <div class="profile-preview">
+                            <span class="profile-badge"></span>
+                        </div>
+                    </div>
+                </div>
+                <button class="continue-2">continue</button>
+            </div>
+        </div>
+        <div class="message-modal-wrapper hidden">
+            <div class="message-modal hidden">
+                <button class="back">
+                    <img src="icons/back.svg" alt="back">
+                </button>
+                <h2>select a font for your messages</h2>
+                <div class="message-fonts">
+                    <button class="message-font-1">Default</button>
+                    <button class="message-font-2">Coder</button>
+                    <button class="message-font-3">Newspaper</button>
+                    <button class="message-font-4">Absolute Pookie</button>
+                    <button class="message-font-5">Professional</button>
+                </div>
+                <h2>select a message background</h2>
+                    <div class="message-themes-wrapper">
+                        <div class="messages-themes">
+                            <button class="message-theme-0 msg-theme-default"></button>
+                            <button class="message-theme-1 msg-theme-forest"></button>
+                            <button class="message-theme-2 msg-theme-sunset"></button>
+                            <button class="message-theme-3 msg-theme-pastel"></button>
+                            <button class="message-theme-4 msg-theme-nebula"></button>
+                            <button class="message-theme-5 msg-theme-monochrome"></button>
+                            <button class="message-theme-6 msg-theme-ocean"></button>
+                            <button class="message-theme-7 msg-theme-amber"></button>
+                            <button class="message-theme-8 msg-theme-crimson"></button>
+                            <button class="message-theme-9 msg-theme-twilight"></button>
+                        </div>
+                    </div>
+                <div>
+                </div>
+                <div class="message-preview-modal-wrapper">
+                    <div class="message-preview-modal">
+                        <h2>preview</h2>
+                        <div class="message-wrapper-preview">
+                            <div class="profile-picture-preview">
+                                <span class="profile-picture-preview-badge"></span>
+                            </div> 
+                            <div class="message-preview">
+                                <div class="message-details">
+                                    <span class="sender-username"></span>
+                                    <span class="timestamp"></span>
+                                </div>
+                                <p class="message-content">hi im a total pookie fr fr</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="sign-up">sign up</button>
+            </div>
+        </div>
+        <div class="create-modal-wrapper hidden">
+            <div class="create-modal hidden">
+                <div class="modal-header">
+                    <h2>create server</h2>
+                    <button class="close-modal">
+                        <img src="icons/close.svg" alt="close">
+                    </button>
+                </div>
+                <div class="server-name-holder">
+                    <input type="text" placeholder="server name" class="server-name-input"> 
+                    <p class="server-name-input-indicator">0/25</p>
+                </div>
+                <div class="server-topic-holder">
+                    <input type="text" placeholder="server topic" class="server-topic-input"> 
+                    <p class="server-topic-input-indicator">0/50</p>
+                </div>
+                <h2>channels</h2>
+                <div class="temp-channels">
+                </div>
+
+                <input class="add-channel-input" placeholder="channel-name">
+                <button class="add-channel"><img src="icons/add2.svg">add channel</button>
+                <div class="server-visible">
+                    <p class="server-visible-p">public</p>
+                    <button class="server-visible-toggle">Toggle</button>
+                </div>
+                <button class="create-server">continue</button>
+            </div>
+        </div>
+        <div class="server-customization-wrapper hidden">
+            <div class="server-customization hidden">
+                <h2>select a server icon</h2>
+                <div class="server-icons">
+                    <button class="server-icon icon-1">
+                        <img alt="Server Icon 1" src="icons/icon-1.svg" class="server-icon-img">
+                    </button>
+                    <button class="server-icon icon-2">
+                        <img alt="Server Icon 2" src="icons/icon-2.svg" class="server-icon-img">
+                    </button>
+                    <button class="server-icon icon-3">
+                        <img alt="Server Icon 3" src="icons/icon-3.svg" class="server-icon-img">
+                    </button>
+                </div>
+                <h2>select a server banner</h2>
+                <div class="server-banners">
+                    <button class="server-banner banner-1">
+                        <img src="icons/banner-1.svg" class="server-banner-img">
+                    </button>
+                    <button class="server-banner banner-2">
+                        <img src="icons/banner-2.svg" class="server-banner-img">
+                    </button>
+                    <button class="server-banner banner-3">
+                        <img src="icons/banner-3.svg" class="server-banner-img">
+                    </button>
+                </div>
+                <h2>select a server tag</h2>
+                <div class="server-tag">
+                    <input type="text" placeholder="enter a server tag" class="server-tag-input"> 
+                </div>
+                <div class="server-tag-preview">
+                    <h1>[]</h1>
+                </div>
+                <button class="create-server-2">create server</button>
+                
+                <!-- 
+                    
+                    MAKE BACKEND. NEED TO ADD SERVER TAGS.
+
+                -->
+            </div>
+        </div>
+        <div class="edit-message-modal-wrapper hidden">
+            <div class="edit-message-modal hidden">
+                
+            </div>
+            <div class="controls">
+                <button class="message-edit-save">Save</button>
+                <button class="message-edit-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <!-- Toast (not the eatable one) -->
+    <div id="toast-container"></div>
+
+    <div class="context-menu hidden">
+        <div class="reactions">
+            <div class="reaction reaction-1">🥀</div>
+            <div class="reaction reaction-2">🔥</div>
+            <div class="reaction reaction-3">💀</div>
+            <div class="reaction reaction-4">💯</div>
+            <div class="reaction reaction-5">🤌</div>
+        </div>
+        <div class="context-menu-buttons"></div>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="scripts/client_1.js"></script>
+    <script src="scripts/client_2.js"></script>
+    <script src="scripts/client_3.js"></script>
+    <script src="scripts/client_4.js"></script>
+</body>
+</html>

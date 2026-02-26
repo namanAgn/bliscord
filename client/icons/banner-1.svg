@@ -1,0 +1,37 @@
+<svg width="197" height="80" viewBox="0 0 197 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: #3D5A80 gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3D5A80"/>
+      <stop offset="50%" stop-color="#3D5A80"/>
+      <stop offset="100%" stop-color="#3D5A80"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="197" height="80" rx="8" fill="url(#bgGrad)"/>
+  
+  <!-- 4 Thick White Lines (vertical, equal gaps) -->
+  <!-- Line 1 -->
+  <rect x="16" y="16" width="8" height="48" rx="4" fill="#FFFFFF" opacity="1"/>
+  <!-- Line 2 (gap = 8px) -->
+  <rect x="32" y="16" width="8" height="48" rx="4" fill="#FFFFFF" opacity="1"/>
+  <!-- Line 3 (gap = 8px) -->
+  <rect x="48" y="16" width="8" height="48" rx="4" fill="#FFFFFF" opacity="1"/>
+  <!-- Line 4 (gap = 8px) -->
+  <rect x="64" y="16" width="8" height="48" rx="4" fill="#FFFFFF" opacity="1"/>
+  
+  <!-- Glow effect -->
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="1.5" flood-color="#FFFFFF" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <!-- Glow on all lines -->
+  <g filter="url(#glow)">
+    <rect x="16" y="16" width="8" height="48" rx="4" fill="none"/>
+    <rect x="32" y="16" width="8" height="48" rx="4" fill="none"/>
+    <rect x="48" y="16" width="8" height="48" rx="4" fill="none"/>
+    <rect x="64" y="16" width="8" height="48" rx="4" fill="none"/>
+  </g>
+</svg>

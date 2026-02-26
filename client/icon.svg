@@ -1,0 +1,108 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background (no grain) -->
+  <rect width="1024" height="1024" rx="220"
+        fill="#00000000"/>
+
+  <!-- Abstract speech bubble group -->
+  <g transform="translate(192, 220)">
+    <!-- Base bubble shape (slightly asymmetric rounded rectangle) -->
+    <path
+      d="M140 80
+         H540
+         C596 80 640 124 640 180
+         V360
+         C640 432 592 490 522 500
+         L420 516
+         L340 580
+         C324 592 304 586 298 568
+         L280 512
+         H140
+         C84 512 40 468 40 412
+         V180
+         C40 124 84 80 140 80
+         Z"
+      fill="none"
+      stroke="#f5da7e"
+      stroke-width="32"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+
+    <!-- Inner layered shape for subtle depth -->
+    <path
+      d="M176 132
+         H512
+         C558 132 592 166 592 212
+         V332
+         C592 386 556 426 506 434
+         L424 448
+         L362 496
+         C350 506 334 502 330 490
+         L318 452
+         H176
+         C130 452 96 418 96 372
+         V212
+         C96 166 130 132 176 132
+         Z"
+      fill="#00000000"
+      stroke="none"
+    />
+
+    <!-- Gentle inner shadow using stroke + blur -->
+    <defs>
+      <filter id="innerShadow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur"/>
+        <feOffset dy="4" dx="0" result="offsetBlur"/>
+        <feComposite in="offsetBlur" in2="SourceAlpha" operator="arithmetic"
+                     k2="-1" k3="1" result="innerShadowComp"/>
+        <feColorMatrix in="innerShadowComp" type="matrix"
+          values="0 0 0 0 0
+                  0 0 0 0 0
+                  0 0 0 0 0
+                  0 0 0 0.55 0"/>
+        <feComposite in="SourceGraphic"/>
+      </filter>
+    </defs>
+
+    <path
+      d="M176 132
+         H512
+         C558 132 592 166 592 212
+         V332
+         C592 386 556 426 506 434
+         L424 448
+         L362 496
+         C350 506 334 502 330 490
+         L318 452
+         H176
+         C130 452 96 418 96 372
+         V212
+         C96 166 130 132 176 132
+         Z"
+      fill="none"
+      stroke="#f5da7e"
+      stroke-width="6"
+      opacity="0.35"
+      filter="url(#innerShadow)"
+    />
+
+    <!-- Aligned, larger, defined middle dots -->
+    <circle cx="280" cy="272" r="20"
+            fill="#f5da7e"
+            stroke="#f5da7e"
+            stroke-width="4"
+            stroke-linejoin="round"/>
+    <circle cx="370" cy="272" r="20"
+            fill="#f5da7e"
+            stroke="#f5da7e"
+            stroke-width="4"
+            stroke-linejoin="round"/>
+    <circle cx="460" cy="272" r="20"
+            fill="#f5da7e"
+            stroke="#f5da7e"
+            stroke-width="4"
+            stroke-linejoin="round"/>
+  </g>
+</svg>
